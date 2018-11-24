@@ -1,0 +1,10 @@
+<!--pages/buy/payfalse/payfalse.wxml-->
+
+<view class='logo'>
+ <image src='../../../images/icon/whale.png'></image>
+ <text>您未成功下单</text>
+</view><!--您已下单之前部分完-->
+<view class='button'>
+ <image src='../../../images/icon/cuo.png'></image>
+ <button style='background:#afacf0;color:#fff;font: normal 1rem 黑体；'>重新下单</button>
+</view>

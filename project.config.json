@@ -1,0 +1,83 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
+	"appid": "wx8792e44ee62c37a9",
+	"projectname": "jyq",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 0,
+					"name": "1",
+					"pathName": "pages/buy/pay/pay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "2",
+					"pathName": "pages/buy/payfalse/payfalse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "3",
+					"pathName": "pages/delete/delete",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "4",
+					"pathName": "pages/forum/feedback/feedback",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "5",
+					"pathName": "pages/forum/feedbacka/feedbacka",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "6",
+					"pathName": "pages/forum/report/report",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "7",
+					"pathName": "pages/forum/reporta/reporta",
+					"query": ""
+				}
+			]
+		}
+	}
+}

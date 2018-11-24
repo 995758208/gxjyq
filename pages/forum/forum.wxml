@@ -1,0 +1,76 @@
+<!--forum.wxml-->
+<view class="container">
+  <!-- 导航部分 -->
+  <view class='for-nav btn-area'>
+    <navigator class='for-ruturn' url="../index/index" open-type="switchTab" hover-class="other-navigator-hover">
+      <image src='../../images/icon/return.png'></image>
+    </navigator>
+      鲸鱼圈
+      <view bindtap="actioncnt"  class='for-modul'>
+        <image src='../../images/icon/sendes.png'></image>
+      </view> 
+  </view>
+  <!-- 滚动 -->
+  <view class='scroll-img'>
+    <swiper class="banner-img" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular ="{{circulars}}" indicator-color="#FFF" indicator-active-color="#bfefff">
+      <block wx:for="{{navImg}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 消息部分 -->
+  <view class='for-container' wx:for="{{news}}" wx:key="{{index}}" bindtap='forum3'>
+    <view class='for-con-top'>
+      <view class='for-headImg'>
+        <image src='{{item.headingImg}}'></image>
+      </view>
+      <view class='for-text'>
+        <text class='for-text1'>话题：{{item.title}}</text>
+        <text class='for-text2'>猜你喜欢</text>
+      </view>
+      <view class='for-right'>
+        {{item.seeNum}}阅读
+      </view>
+    </view>
+    <view class='for-con-center'>
+      <view class='center-title'>{{item.heading}}</view>
+      <view class='center-data'>{{item.new}}</view>
+      <view class='center-img'>
+        <view class='center-imgs' wx:for="{{item.showImg}}" wx:key="{{index}}">
+          <image src='{{item}}'></image>
+        </view>
+      </view>
+    </view>
+    <view class='for-con-bottom'>
+      <!-- 作者时间 -->
+      <view class='time'>
+        <view class='writer'>（{{item.writer}}）</view>
+        <view class='dataTime'>发布于{{item.data}}</view>
+        <view class='delNews'>
+          <image src='../../images/icon/del.png'></image>
+        </view>
+      </view>
+      <!-- 点赞功能 -->
+      <view class='good'>
+        <view class='sendNews'>
+          <image src='../../images/icon/fx.png'></image>
+          分享
+        </view>
+        <view class='sayNews'>
+          <image src='../../images/icon/pl.png'></image>
+          评论
+        </view>
+        <view class='loveNews'>
+          <image src='../../images/icon/ax.png'></image>
+          {{item.newsNum}}
+        </view>
+      </view>
+    </view>
+  </view>
+ 
+  
+
+
+</view>

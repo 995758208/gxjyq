@@ -1,0 +1,38 @@
+<view class='container'>
+  <view class='mysell'>
+    <text>我买了</text>
+    <navigator url="mysell/mysell">
+      <view class='mysell-icon' bindtap='showMould'>
+        <text>我卖了</text>
+        <image src='../../../images/icon/right.png'></image>
+      </view>
+    </navigator>
+  </view>
+
+  <view class='sell-lists' wx:for="{{sellList}}" wx:key="{{index}}">
+    <navigator url='details/details'>
+      <view class='sell-list'>
+        <view class='list-top'>
+          <text class='text'>买家名称</text>
+          <text class='text'>交易成功/失败</text>
+        </view>
+        <view class='list-center'>
+          <view class='list-img'>
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class='list-con'>
+            {{item.dir}}
+          </view>
+          <view class='list-msg'>
+            <text class='texts'>
+                价钱：{{item.money}}
+            </text>
+            <text class='texts'>
+                数量：{{item.num}}
+            </text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

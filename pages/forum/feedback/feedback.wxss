@@ -1,0 +1,45 @@
+/* pages/forum/feedback/feedback.wxss */
+.box{
+  width: 750rpx;
+  height: 500rpx;
+  }
+  .tittle{
+    width: 750rpx;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    border-bottom: 0.1rem solid silver; 
+    font-size: 1.5rem;
+  }
+  .evidence{
+    width: 750rpx;
+    height: 7.2rem;
+    border-bottom: 0.1rem solid silver;
+  }
+  .evidence-text{
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+  }
+  .img image{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.5rem
+  }
+  .content{
+    width: 750rpx;
+    height: 6rem;
+    margin-top:0.5rem;
+    border-bottom: 0.1rem solid silver; 
+  }
+.Submission{
+  width: 600rpx;
+  height: 2rem;
+  border-radius:0.5rem; 
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  background-color: #837fec;
+  color:#fff;
+}

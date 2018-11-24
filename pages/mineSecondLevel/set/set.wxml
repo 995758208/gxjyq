@@ -1,0 +1,11 @@
+<view class="container">
+<!-- 内容 -->
+  <view class='set' wx:for="{{sets}}" wx:key="{{index}}">
+    <navigator url='{{item.Src}}'>
+      <view class='sets'>
+        <text>{{item.title}}</text>
+        <image src='../../../images/icon/right.png'></image>
+      </view>
+    </navigator>
+  </view>
+</view>

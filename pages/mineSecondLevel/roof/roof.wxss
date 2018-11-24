@@ -1,0 +1,55 @@
+.container{
+  padding: 0;
+  margin: 0;
+}
+.tops{
+  margin-left: 10%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width:80%;
+  height: 5rem;
+  border-bottom: 1px solid #ccc;
+}
+.tops text{
+  display: block;
+  width: 60%;
+  height: 4rem;
+  line-height: 1rem;
+}
+.topsss{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 4rem;
+}
+.tops image{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.wc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.a{
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+}
+.b image{
+  width: 8rem;
+  height: 8rem;
+}

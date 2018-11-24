@@ -1,0 +1,99 @@
+<view class="container" id='{{id}}'>
+  <!-- 产品图片 -->
+  <view class='scroll-img'>
+    <swiper class="banner-img" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular ="{{circulars}}" indicator-color="#FFF" indicator-active-color="#bfefff">
+      <block wx:for="{{goodsimg}}">
+        <swiper-item>
+          <image src="http://{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 产品详情 -->
+
+  
+  <view class='contant' >
+
+    <view class='h1'>
+      <text>￥{{price}}</text>
+    </view>
+    <view class='h2'>
+      <text>{{desc}}</text>
+    </view>
+    <view class='h3'>
+      <text>诚信：{{honest}}</text>
+      <text style='margin-left:4rem;'>几成新：{{newnessLevel}}</text>
+      <text style='margin-left:4rem;'>浏览：{{viewCount}}</text>
+      
+    </view>
+    
+    <view class='kong'></view>
+    <!--商品详情与评论切换-->
+  
+    <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="checkCurrent">商品描述</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="checkCurrent">商品评论</view>
+    </view>
+
+    <view class = "{{currentTab == 0 ? 'show':'hidden'}}" >
+      <scroll-view>
+        <text>{{desc}}</text>
+      </scroll-view>
+    </view>
+    <view class = "{{currentTab == 1 ? 'show':'hidden'}}" >
+    <scroll-view>
+      <view class='comment-container' wx:for="{{comment}}" wx:key="{{index}}" >
+            <view class='comment-top'>
+
+              <view class='comment-headImg'>
+                <image src='{{item.user.avatar}}' style='width:2rem;height:2rem'></image>
+              </view>
+
+              <view class='comment-text'>
+              <!--用户名称和时间-->
+                <text class='comment-text1'>{{item.user.name}}</text>
+                <text class='comment-text2'>{{item.createTime}}</text>
+              </view>
+
+              <view class='comment-right' bindtap='report'>
+                <image src='../../../images/icon/ax.png'style="margin-right:0.5rem;"></image>
+                <image src='../../../images/icon/jubao.png'></image>
+              </view>
+              
+            </view> 
+
+            <view class='comment-center' >
+                <view class='comment-data' >{{item.text}}</view>
+            </view>
+            
+            
+      </view>
+        
+  
+          
+      </scroll-view>
+      <!--输入评论-->
+      <form bindsubmit="commentSubmit" bindreset="formReset">
+            <view class='bottom'>
+
+            <view class='input'>
+              <input type='text'  placeholder='请输入你的评论' name="comment"></input>
+            </view>
+
+            <view class='bq' >
+              <button formType="submit">发送</button>
+            </view>
+            
+          </view>
+      </form>
+    </view>
+    </view>  
+    
+    
+
+
+  <view class='footer'>
+    <button style='float:left;'>联系卖主</button>
+    <button style='background:red;color:#FFF;' bindtap='rander'>立即购买</button>
+  </view>
+</view>

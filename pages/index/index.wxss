@@ -1,0 +1,265 @@
+/**index.wxss**/
+/* 滚动图样式 */
+.banner-img{
+  width: 100%;
+  display: block;
+}
+.banner-img {
+    width: 100%;
+    height: 10rem;
+}
+swiper-item image {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+/* 分类导航 */
+.sort-nav{
+  position: relative;
+  overflow: hidden;
+}
+.sort-nav:before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 0.01rem;
+  border-top: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.sort-nav:after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  /* border-left: 1px solid #d9d9d9; */
+  color: #8a8a8a;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}
+.sort-nav-tab{
+  position: relative;
+  float: left;
+  padding: 0.5rem 0.25rem;
+  width: 33.333%;
+  box-sizing: border-box;
+}
+.sort-nav-tab:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.1rem;
+    bottom: 0;
+    /* border-right: 1px solid #8a8a8a; */
+    color: #8a8a8a;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+} 
+.sort-nav-tab:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    /* border-bottom: 1px solid #8a8a8a; */
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+} 
+.sort-nav-tab:active {
+    background-color: #ECECEC;
+}
+.tab-bg {
+    position: relative;
+    float: left;
+    padding: 0px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.tab-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+}
+.tab-icon image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.tab-icon + .tab-name {
+    margin-top: 0rem;
+}
+.tab-name {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #8a8a8a;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    line-height: 0.8rem;
+}
+/* 租赁专区 */
+.lease-template{
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tem-top{
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.tem-top-text{
+  font-size: 1rem;
+  color: #000;
+}
+.tem-center{
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  height: 12rem;
+}
+.tem-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:  8rem;
+}
+.tem-img image{
+  width: 8rem;
+  height: 8rem;
+  display: inline-block;
+  overflow: hidden;
+}
+.tem-name{
+  padding-left: 0.5rem;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+.tem-price{
+  padding-left: 0.5rem;  
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.7rem;
+}
+.tem-see{
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.6rem;
+  text-align: right;
+  color: #ccc;
+}
+.tem-see image{
+  width: 1rem;
+  height: 1rem;
+}
+
+/* 买卖专区 */
+.Business-template{
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.bus-top{
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.bus-top-text{
+  font-size: 1rem;
+  color: #000;
+}
+.bus-center{
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  height: 12rem;
+}
+.bus-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:  8rem;
+}
+.bus-img image{
+  width: 8rem;
+  height: 8rem;
+  display: inline-block;
+  overflow: hidden;
+}
+.bus-name{
+  padding-left: 0.5rem;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+.bus-price{
+  padding-left: 0.5rem;  
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.7rem;
+}
+.bus-see{
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.6rem;
+  text-align: right;
+  color: #ccc;
+}
+.bus-see image{
+  width: 1rem;
+  height: 1rem;
+}
+
+.adv-banner{
+  width: 100%;
+  display: block;
+}
+.adv-img {
+    width: 100%;
+    height: 5rem;
+}
+.adv-img image {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}

@@ -1,0 +1,97 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/index/stop/stop",
+    "pages/index/rent/rent",
+    "pages/index/server/server",
+    "pages/index/server/information/information",
+    "pages/forum/forum",
+    "pages/release/release",
+    "pages/buy/buy",
+    "pages/buy/details/details",
+    "pages/buy/BuyPage/BuyPage",
+    "pages/buy/pay/pay",
+    "pages/buy/payfalse/payfalse",
+    "pages/news/news",
+    "pages/news/msg/msg",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/delete/delete",
+    "pages/mineSecondLevel/foot/foot",
+    "pages/mineSecondLevel/see/see",
+    "pages/mineSecondLevel/add/add",
+    "pages/mineSecondLevel/money/money",
+    "pages/mineSecondLevel/money/detail/detail",
+    "pages/mineSecondLevel/rule/rule",
+    "pages/mineSecondLevel/name/name",
+    "pages/mineSecondLevel/name/names/names",
+    "pages/mineSecondLevel/publish/publish",
+    "pages/mineSecondLevel/center/center",
+    "pages/mineSecondLevel/roof/roof",
+    "pages/mineSecondLevel/set/set",
+    "pages/mineSecondLevel/set/myset/myset",
+    "pages/mineSecondLevel/mybuy/mybuy",
+    "pages/mineSecondLevel/mybuy/details/details",
+    "pages/mineSecondLevel/mybuy/mysell/mysell",
+    "pages/mineSecondLevel/mybuy/mysell/sellDetails/sellDetails",
+    "pages/mineSecondLevel/mylease/mylease",
+    "pages/mineSecondLevel/mylease/myrent/myrent",
+    "pages/mineSecondLevel/list/list",
+    "pages/mineSecondLevel/day/day",
+    
+    "pages/forum/send/send",
+    "pages/forum/article/article",
+    "pages/forum/report/report",
+    "pages/forum/feedback/feedback",
+    "pages/forum/feedbacka/feedbacka",
+    "pages/forum/reporta/reporta",
+    "pages/forum/forum3/forum3"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#837fec",
+    "navigationBarTitleText": "鲸鱼校圈",
+    "navigationBarTextStyle": "#000",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#837fec",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/indexs.png"
+      },
+      {
+        "pagePath": "pages/forum/forum",
+        "text": "鲸鱼圈",
+        "iconPath": "images/icon/jy.png",
+        "selectedIconPath": "images/icon/jys.png"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "text": "发布",
+        "iconPath": "images/icon/send.png",
+        "selectedIconPath": "images/icon/sends.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "消息",
+        "iconPath": "images/icon/new.png",
+        "selectedIconPath": "images/icon/news.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/icon/mine.png",
+        "selectedIconPath": "images/icon/mines.png"
+      }
+    ]
+  }
+}

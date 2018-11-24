@@ -1,0 +1,244 @@
+.container{
+  padding: 0;
+  margin: 0;
+}
+
+.tab-service{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #efefef;
+}
+.tab-sell{
+  display: inline-flex;
+  width: 30%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 0.8rem;
+}
+.tab-buy,.tab-sell{
+  width: 50%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.orange{
+  border-bottom: 1px solid #837fec;
+  color: #837fec;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+
+.rel-top{
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+}
+.heading{
+  width: 20%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+}
+.input{
+  overflow: scroll;
+  padding-left: 0.5rem;
+  width: 70%;
+  height: 1.8rem;
+  background-color: #efefef;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+}
+.dircetion{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 9rem;
+  background-color: #fff;  
+}
+.ms,.ms-new{
+  padding-left: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+.msk,.msk-new{
+  overflow: scroll;
+  padding: 0.5rem;
+  width: 90%;
+  height: 5rem;
+  background-color: #efefef;
+  border-radius: 8rpx;
+  font-size: 0.7rem;
+}
+
+.Imge{
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.Imge image{
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+}
+
+
+/* 下拉列表 */
+.select_box{
+  left: 2.5%;
+  background: #fff;
+  width: 95%;
+  position: relative;
+}
+.select{
+  background: #efefef;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border:1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.select_text{
+  font-size: 30rpx;
+  color: #8a8a8a;
+  background: #efefef;
+  flex: 1;
+}
+.select_img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.select_img_rotate{
+  transform:rotate(180deg); 
+}
+.option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border:1px solid #efefef;
+  color: #8a8a8a;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #efefef;
+  transition: height 0.3s;
+  z-index: 2000;
+}
+.option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+
+.all{
+  width: 100%;
+}
+.moneyIp,.thingIp{
+  margin-left: 2.5%;
+  background: #fff;
+  width: 95%;
+  height: 2rem;
+  border:1px solid #efefef;
+  border-radius: 8rpx;
+  color: #000;
+  font-size: 0.7rem;
+}
+.palt{
+  margin-top: 0.5rem;
+  margin-left: 2.5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  height: 3rem;
+}
+.jyfs{
+  width: 5rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.face,.kd{
+  margin-left: 0.5rem;
+  width: 4rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.confirm{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+}
+.confirm button{
+  float: right;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+}
+.nav-sell{
+  display: inline-flex;
+  width: 100%;
+  height: 2rem;
+}
+.sell-heading{
+  display: inline-block;
+  width: 20%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.sell-smallHeading{
+  display: inline-block;
+  width: 20%;
+  height: 2rem;
+  line-height: 2.2rem;
+  font-size: 0.7rem;
+  color: #8a8a8a;
+}
+.dirc-sell{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 8rem;
+  background-color: #fff;  
+}
+.sell-alert{
+  padding: 0;
+  margin-top: 0;
+  display: block;
+  margin-left: 5%;
+  width: 90%;
+  height: 2rem;
+  line-height: 1rem;
+  color: #8a8a8a;
+  font-size: 0.8rem;
+}

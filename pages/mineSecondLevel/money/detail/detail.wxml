@@ -1,0 +1,29 @@
+<view >
+  <view class='information'>
+    <text class='title'>{{namet}}</text>
+    <text>服务描述：{{desc}}</text>
+    <text>发布时间：{{releaseTime}}</text>
+    <text>服务时间：{{serviceTime}}</text>
+    <text>服务地点：{{serviceLocation}}</text>
+    <text>注意事项：{{note}}</text>
+  </view>
+  <view style='margin-top:20rpx'>
+  </view>
+  <view class='information contacts'>
+    <text class='title'>发布人</text>
+    <view class='single'>
+      <image src='{{singleImage}}'></image>
+      <view class='information contacts'>
+        <text>{{singler}}</text>
+        <text>联系方式：{{phoneNumber}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='information money'>
+    <text class='title'>交易金额</text>
+    <text style='color:#837fec;'>{{price}}元</text>
+  </view>
+  <view class='note'>
+    <text>小鲸鱼们要及时完成任务哦，过多取消订单\n和延时完成任务会使口碑降低的哦</text>
+  </view>
+</view>

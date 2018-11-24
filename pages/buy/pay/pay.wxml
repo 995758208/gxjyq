@@ -1,0 +1,19 @@
+<!--pages/buy/pay/pay.wxml-->
+
+<view class='logo'>
+<!--<view class='logoimg'>-->
+<image src='../../../images/icon/whale.png'></image>
+<!--</view>-->
+ 
+ <view class='text'>
+  <text>您已成功下单</text>
+ </view>
+
+</view><!--您已下单之前部分完-->
+<view class='button'>
+<view class='buttomimg'>
+<image src='../../../images/icon/dui.png'></image>
+</view>
+ 
+ <button style='background:#afacf0;color:#fff;font: normal 1rem 黑体；' bindtap='success'>确认</button>
+</view>

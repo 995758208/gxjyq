@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='day'>
+    <view class='day-list' wx:for="{{dayList}}" wx:key="{{index}}">
+      <view class='list-img'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='list-center'>
+        <view class='text1'>{{item.name}}</view>
+        <view class='text2'>{{item.msg}}</view>
+      </view>
+      <view class='list-right'>
+        剩余{{item.dayNum}}天
+      </view>
+    </view>
+  </view>
+</view>

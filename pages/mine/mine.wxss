@@ -1,0 +1,158 @@
+.container{
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+}
+.me-top{
+  width: 100%;
+  height: 7rem;
+  background-color: #837fec;
+}
+.me-heading{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #837fec;
+}
+.me-heading::after{
+  border: none;
+  
+}
+.me-heading image{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.me-btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+}
+.me-btn2{
+
+  width: 50%;
+  height: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.me-name{
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  display: inline-block; 
+	white-space: nowrap;
+	overflow: hidden; 
+	text-overflow:ellipsis;
+  color: #fff;
+}
+.me-cxd,.me-kb{
+  width: 45%;
+  height: 1rem;
+  font-size: 0.8rem;
+  display: inline-block; 
+	white-space: nowrap;
+	overflow: hidden; 
+	text-overflow:ellipsis;
+  color: #fff;
+}
+.me-nav{
+  display: inline-flex;
+  width: 100%;
+  height: 4.2rem;
+  background-color: #fff;
+  /* border-bottom: 1px solid #efefef; */
+}
+.me-send,.me-buy,.me-rent,.me-money{
+  width: 25%;
+  height: 4rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+  /* border-bottom: 1px solid #efefef; */
+}
+.num{
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #000;
+}
+.me-day{
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: left;
+  background-color: #fff;
+  /* border-bottom: 1px solid #efefef; */
+}
+.more{
+  width: 30%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #8a8a8a;
+}
+.me-nav2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #fff;
+  /* border-bottom: 1px solid #efefef; */
+}
+.me-foot,.me-see,.me-get,.me-list{
+  width: 25%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.me-img{
+  width: 100%;
+  height: 7rem;
+}
+.me-img image{
+  width: 100%;
+  height: 7rem;
+}
+.smrz,.kfzx,.yjfk,.ptgz,.sz{
+  border-bottom: 1px solid #dddddd;
+  padding-left: 5%;
+  margin: 0 auto;
+  width: 95%;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #fff;
+  font-size: 1rem;
+}
+.kong{
+  width: 100%;
+  height: 0.5rem;
+}
+.abc{
+  height: 4rem;
+}
+.m-logo{
+  width:1.2rem;
+  height:1.2rem;
+  float:left;
+  margin-top:0.9rem;
+  margin-right: 0.5rem;
+}
+.m-logo1{
+  width:1.5rem;
+  height:1.5rem;
+  float:left;
+  margin-top:0.7rem;
+  margin-left: 1rem;
+}

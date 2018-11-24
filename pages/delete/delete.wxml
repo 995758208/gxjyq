@@ -1,0 +1,10 @@
+<!--pages/delete/delete.wxml-->
+<view id='all'>
+  <view class='icon'><image src='../../images/icon/delete.png'></image></view>
+  <view class='top'></view>
+  <text class='big'>删除</text>
+  <text class='small'>您确定删除吗？</text>
+  <button class='cencel'>取消</button>
+  <button class='confirm'>确定</button>
+  <view class='bottom'></view>
+</view>

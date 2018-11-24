@@ -1,0 +1,23 @@
+<view class='container'>
+  <view class='top'>
+    <view class='topa'>
+      <view class='text'>累计赚到（元）</view>
+      <view class='text2'>0.00</view>
+    </view>
+    <view class='topb'>
+      <view class='text'>累计花掉（元）</view>
+      <view class='text2'>0.00</view>
+    </view>
+  </view>
+
+  <view class='buy' wx:for="{{thingImg}}" wx:key="{{index}}">
+    <view class='img'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='con'>
+      <view class='txt'>{{item.name}}</view>
+      <view class='txt'>{{item.time}}</view>
+    </view>
+    <view class='money'>价钱：{{item.money}}</view>
+  </view>
+</view>

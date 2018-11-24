@@ -1,0 +1,10 @@
+<!--pages/forum/feedbacka/feedbacka.wxml-->
+<view id='all'>
+  <view class='icon'><image src='../../../../images/icon/feedback.png'></image></view>
+  <view class='top'></view>
+  <text class='big'>反馈</text>
+  <text class='small'>您确定反馈吗？</text>
+  <button class='cencel'>取消</button>
+  <button class='confirm'>确定</button>
+  <view class='bottom'></view>
+</view>

@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class='header'>
+    <view class='end'>
+      <view class='headerText'>头像</view>
+      <view class='headerImg'>
+        <image src='../../../../images/leaseImg/1.jpg'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='header'>
+    <view class='end'>
+      <view class='headerText'>昵称</view>
+      <view class='headerText2'>Aa</view>
+    </view>
+  </view>
+
+  <view class='header'>
+    <view class='end'>
+      <view class='headerText'>性别</view>
+      <view class='headerText2'>男</view>
+    </view>
+  </view>
+
+</view>

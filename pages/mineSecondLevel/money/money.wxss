@@ -1,0 +1,41 @@
+
+.kong{
+  width: 100%;
+  height: 0.5rem;
+  background-color: #efefef;
+}
+.goods-server{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.goods-server:nth-child(1){
+  margin-top: 0rem;
+}
+.name2{
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+.time{
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+  color:#242424; 
+}
+.description2{
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+  /* 文本不超过一行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Honest2{
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+}

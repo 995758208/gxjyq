@@ -1,0 +1,10 @@
+<!--pages/forum/report/report.wxml-->
+<view class='report'>
+  <view class='top'><text>!</text></view>
+  <view class='text'><text>举报</text></view>
+  <view class='content'><text>您确定要举报吗？</text></view>
+  <view class='button'>
+    <view class='button-left'><text>取消</text></view>
+    <view class='button-right'><text>确定</text></view>
+  </view>
+</view>

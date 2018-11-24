@@ -1,0 +1,176 @@
+<!--release.wxml-->
+<view class="container">
+  <!-- 导航 -->
+  <view class='tab'>
+    <view class='tab-service'>
+      <view class='tab-sell'>
+        <view class='tab-buy'>
+          <view class="{{selected?'orange':default}}" data-w='w' bindtap='selected'>
+            我要卖
+          </view>
+        </view>
+        <view class='tab-buy'>
+          <view class="{{selected1?'orange':default}}" data-y='y' bindtap='selected1'>
+            我出租
+          </view>
+        </view>
+        <view class='tab-buy'>
+          <view class="{{selected2?'orange':default}}" data-z='z' bindtap='selected2'>
+            服务
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 我要卖 -->
+  <form bindsubmit="buySubmit" bindreset="formReset">
+    <view class="{{selected?'show':'hidden'}}" name="content">
+      <view class='buy'>
+        <view class='rel-top'>
+          <text class='heading'>标题：</text>
+          <input class="input" name="name" placeholder="请输入标题" value='{{form.name}}' />
+        </view>
+        <view class='dircetion'>
+          <text class='ms'>描述物品：</text>
+          <textarea class='msk' placeholder="详细描述会为你带来最快速的成交哦：1、描述一下你物品的特点，如吉他；木制，磨沙。2、描述一下物品如何使用，要注意的地方。3、描述一下你希望租客如何对待物品。" name="desc"></textarea>
+        </view>
+        <!-- 相片 -->
+        <view class='Imge'>
+          <image src='../../images/icon/send.png' bindtap="upimg"></image>
+          <block wx:for="{{images}}">
+            <view class='logoinfo'>
+              <image src='{{item}}' bindtap="ylimg"></image>
+            </view>
+          </block>
+        </view>
+        <!-- 选学校 -->
+        <text class='ms'>发布校区：</text>
+        <view class='select_box'>
+          <view class='select' catchtap='selectTap'>
+            <text class='select_text'>{{selectData[index]}}</text>
+            <image class='select_img {{show&&"select_img_rotate"}}' src='../../images/icon/dowm.png'></image>
+          </view>
+          <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+            <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>
+            {{item}}
+          </text>
+          </view>
+        </view>
+        <!-- 填材料 -->
+        <view class='all'>
+          <text class='ms'>价格:</text>
+          <input class="moneyIp" name="price" placeholder="   请输入价格  例:￥10" type='number' value='{{form.number}}' />
+          <text class='ms'>联系方式：</text>
+          <input class="thingIp" name="phone" placeholder="   请输入您的联系方式" value='{{form.phone}}' />
+          <text class='ms'>物品几成新：</text>
+          <input class="thingIp" name="newnessLevel" placeholder="   请输入0-10成新，例如：10" type='number' value='{{form.range}}' />
+          <text class='ms'>备注：</text>
+          <input class="thingIp" name="remarks" placeholder="   请输入内容" />
+          <view class='palt'>
+            <text class='jyfs'>交易方式：</text>
+            <radio-group name="transaction">
+              <label>
+                <radio value="1" checked="ture" />面交</label>
+            </radio-group>
+          </view>
+        </view>
+        <!-- 确认按钮 -->
+        <view class='confirm'>
+          <button formType="submit">提交</button>
+        </view>
+      </view>
+    </view>
+  </form>
+
+  <!-- 我要租 -->
+  <form bindsubmit="sellSubmit" bindreset="formReset">
+    <view class="{{selected1?'show':'hidden'}}">
+      <view class='nav-sell'>
+        <text class='sell-heading'>发布</text>
+        <text class='sell-smallHeading'>租赁规则</text>
+      </view>
+      <view class='rel-top'>
+        <text class='heading'>标题：</text>
+        <input class="input" name="name" placeholder="请输入标题" />
+      </view>
+      <view class='dirc-sell'>
+        <text class='ms'>描述物品：</text>
+        <textarea class='msk' placeholder="{{sellDirction}}" name="sellDesc"></textarea>
+      </view>
+      <!-- 相片 -->
+      <view class='Imge'>
+        <image src='../../images/icon/send.png' bindtap="upimg"></image>
+        <block wx:for="{{img_arr}}">
+          <view class='logoinfo'>
+            <image src='{{item}}'></image>
+          </view>
+        </block>
+      </view>
+      <!-- 物品属性 -->
+      <view class='all'>
+        <text class='ms'>物品属性：</text>
+        <view class='select_box'>
+          <view class='select' catchtap='selectTap'>
+            <text class='select_text'>{{selectData2[index]}}</text>
+            <image class='select_img {{show&&"select_img_rotate"}}' src='../../images/icon/dowm.png'></image>
+          </view>
+          <view class='option_box' style='height:{{show?(selectData2.length>5?300:selectData2.length*60):0}}rpx;'>
+            <text class='option' style='{{index==selectData2.length-1&&"border:0;"}}' wx:for='{{selectData2}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>
+            {{item}}
+          </text>
+          </view>
+        </view>
+        <text class='ms'>租金</text>
+        <input class="moneyIp" name="sellprice" placeholder="   请输入价格  例:￥10/天" />
+        <text class='ms'>商品原价格</text>
+        <input class="moneyIp" name="goodprice" placeholder="   请不要出租超过3000元的商品" />
+        <text class='ms'>押金收取</text>
+        <input class="thingIp" name="search" placeholder="   请输入押金" />
+        <text class='ms'>提示：</text>
+        <view class='sell-alert'>
+          如果物品出现损坏，需要平台追究租客责任。以10%的租金作为支付平台的费用。
+        </view>
+      </view>
+      <!-- 确认按钮 -->
+      <view class='confirm'>
+        <button formType="submit">提交</button>
+      </view>
+    </view>
+  </form>
+
+  <!-- 服务 -->
+  <form bindsubmit="serverSubmit" bindreset="formReset">
+    <view class="{{selected2?'show':'hidden'}}">
+      <view class='buy'>
+        <view class='rel-top'>
+          <text class='heading'>标题：</text>
+          <input class="input" name="name" placeholder="请输入标题" />
+        </view>
+        <view class='dircetion'>
+          <text class='ms'>服务描述：</text>
+          <textarea class='msk' placeholder="详细描述会为你带来最快速的成交哦" name="desc"></textarea>
+        </view>
+
+        <!-- 填材料 -->
+        <view class='all'>
+          <text class='ms'>价格:</text>
+          <input class="moneyIp" name="price" placeholder="   请输入价格  例:￥10" />
+
+          <text class='ms'>送达地点：</text>
+          <input class="thingIp" name="serviceLocation" placeholder="例如送至教a 宿舍26#5026" />
+
+          <text class='ms'>送达时间：</text>
+          <input class="thingIp" name="serviceTime" placeholder="2018-10-01 10:30" />
+          <text class='ms'>注意事项：</text>
+          <input class="thingIp" name="note" placeholder="加什么" />
+          <text class='ms'>手机号码：</text>
+          <input class="thingIp" name="phoneNumber" placeholder=" 12345678911" />
+        </view>
+        <!-- 确认按钮 -->
+        <view class='confirm'>
+          <button formType="submit" bindtap='getTime'>提交</button>
+        </view>
+      </view>
+    </view>
+  </form>
+</view>

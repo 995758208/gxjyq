@@ -1,0 +1,64 @@
+.container{
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+}
+.top{
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+}
+.topa,.topb{
+  width: 50%;
+  height: 4rem;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+.text,.text2{
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+}
+.text2{
+  font-size: 1.5rem;
+}
+.buy{
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 4rem;
+}
+.img image{
+  width: 4rem;
+  height: 4rem;
+}
+.con{
+  width: 40%;
+  height: 4rem;
+}
+.txt{
+  width: 100%;
+  height: 2rem;
+}
+.money{
+  width: 30%;
+  height: 4rem;
+  line-height: 7rem;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

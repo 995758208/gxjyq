@@ -1,0 +1,153 @@
+<!--mine.wxml-->
+<view class="container">
+  <!-- 头部头像信誉等 -->
+  <view class='me-top'>
+    <button open-type="getUserInfo" class='me-heading' bindtap="getUserInfo">
+        <image src='{{avatarUrl}}'></image>
+    </button>
+    <view class='me-btn'>
+      <view class='me-name'>
+        {{nickName}}
+      </view>
+    </view>
+    <view class='me-btn2'>
+      <view class='me-cxd'>
+        诚信度:{{cxd}}
+      </view>
+      <view class='me-kb'>
+        口碑:{{kb}}
+      </view>
+    </view>
+  </view>
+  <!-- 二级导航条 -->
+  <view class='me-nav'>
+    <view class='me-send'>
+      <view class='abc'>
+        <navigator url="../mineSecondLevel/publish/publish">
+          <view class='num'>{{sendNum}}</view>
+          我的发布
+        </navigator>
+      </view>
+    </view>
+    <view class='me-buy'>
+      <navigator url="../mineSecondLevel/mybuy/mybuy">
+        <view class='abc'>
+          <view class='num'>{{buyNum}}</view>
+          我的买卖
+        </view>
+      </navigator>
+    </view>
+    <view class='me-rent'>
+      <navigator url="../mineSecondLevel/mylease/mylease">
+        <view class='abc'>
+          <view class='num'>{{rentNum}}</view>
+          我的租赁
+        </view>
+      </navigator>
+    </view>
+    <view class='me-money'>
+      <navigator url="../mineSecondLevel/money/money">
+        <view class='abc'>
+          <view class='num'>{{id}}</view>
+          我的服务
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 租凭天数 -->
+  <navigator url="../mineSecondLevel/day/day">
+    <view class='me-day'>
+      <image src='../../images/mineImg/rili.png' style="width:1.2rem;height:1.2rem;float:left;margin-top:0.9rem;margin-left:0.9rem;"></image>
+      租赁剩余天数：{{myName}}-{{myDay}}天
+      <view class='more'>
+        更多
+      </view>
+    </view>
+  </navigator>
+  <!-- 二级导航条 -->
+  <view class='me-nav2'>
+    <view class='me-foot'>
+      <navigator url="../mineSecondLevel/money/money">
+        <image src='../../images/mineImg/money.png' class="m-logo1"></image>
+        <view>
+          余额
+        </view>
+      </navigator>
+    </view>
+    <view class='me-see'>
+      <navigator url="../mineSecondLevel/see/see">
+        <image src='../../images/mineImg/ax.png' class="m-logo1"></image>
+        <view>
+          关注
+        </view>
+      </navigator>
+    </view>
+    <view class='me-get'>
+      <navigator url="../mineSecondLevel/add/add">
+        <image src='../../images/mineImg/shou.png' class="m-logo1"></image>
+        <view>
+          收藏
+        </view>
+      </navigator>
+    </view>
+    <view class='me-list'>
+      <navigator url="../mineSecondLevel/list/list">
+        <image src='../../images/mineImg/zd.png' class="m-logo1"></image>
+        <view>
+          账单
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 广告图 -->
+  <navigator url="#">
+    <view class='smrz'>
+      <image src='../../images/mineImg/shop.png' class="m-logo"></image>
+      <view>
+        积分商城
+      </view>
+    </view>
+  </navigator>
+  <!-- 功能区 -->
+  <navigator url="../mineSecondLevel/name/name">
+    <view class='smrz'>
+      <image src='../../images/mineImg/renzhen.png' class="m-logo"></image>
+      <view>
+        实名认证
+      </view>
+    </view>
+  </navigator>
+  <navigator url="../mineSecondLevel/roof/roof">
+    <view class='kfzx'>
+      <image src='../../images/mineImg/kefu.png' class="m-logo"></image>
+      <view>
+        客服中心
+      </view>
+    </view>
+  </navigator>
+  <navigator url="../mineSecondLevel/center/center">
+    <view class='yjfk'>
+      <image src='../../images/mineImg/fankui.png' class="m-logo"></image>
+      <view>
+        一键反馈
+      </view>
+    </view>
+  </navigator>
+  <navigator url="../mineSecondLevel/rule/rule">
+    <view class='ptgz'>
+      <image src='../../images/mineImg/guize.png' class="m-logo"></image>
+      <view>
+        平台规则
+      </view>
+    </view>
+  </navigator>
+  <navigator url="../mineSecondLevel/set/set">
+    <view class='sz'>
+      <image src='../../images/mineImg/set.png' class="m-logo"></image>
+      <view>
+        设置
+      </view>
+    </view>
+  </navigator>
+  <view class='kong'></view>
+</view>

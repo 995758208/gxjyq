@@ -1,0 +1,19 @@
+<!--mine.wxml-->
+<view class='container'>
+  <!-- 导航部分 -->
+  <view class='me-foot-nav'>
+    <text>足迹</text>
+    <image src='../../../images/icon/del.png'></image>
+  </view>
+  <!-- 消息 -->
+  <view class='me-foot-con' wx:for="{{message}}" wx:key="{{index}}">
+    <view class='time'>{{item.time}}</view>
+    <view class='img'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='money'>
+      <text>价格：{{item.money}}￥</text>
+      <image src='../../../images/icon/more.png'></image>
+    </view>
+  </view>
+</view>

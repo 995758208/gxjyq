@@ -1,0 +1,24 @@
+<!--mine.wxml-->
+<view class='container'>
+
+  <!-- 内容 -->
+  <view class='see-con'>
+    <!-- tab -->
+    <view class='see-con-tab'>
+      <view class='see-tab-left'>
+        <text class='numLeft'>{{numLeft}}</text>
+        <text class='numLeftText'>我关注的</text>
+      </view>
+      <view class='see-tab-right'>
+        <text class='numLeft'>{{numRight}}</text>
+        <text class='numLeftText'>关注我的</text>
+      </view>
+    </view>
+    <view class='jyImg'>
+      <image src='../../../images/leaseImg/5.jpg'></image>
+      <text class='jyText'>
+        您还没有关注别人哦！鲸鱼们这么仙，快去关注一些吧~
+      </text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+/* pages/forum/report/report.wxss */
+.report{
+  width: 16rem;
+  height: 12rem;
+  border-top: 0.7rem solid #837fec;
+  border-bottom: 0.5rem solid #837fec;
+  margin-left:2rem;
+  margin-top: 7rem; 
+}
+.top{
+  width: 2rem;
+  height: 2rem;
+  border-radius:50%; 
+  border: 0.3rem #4640fa solid;
+  margin-top: -1.6rem;
+  margin-left: 6.6rem;
+  background-color: #837fec;
+  text-align: center;
+  line-height: 2rem; 
+}
+.text{
+  width: 3rem;
+  color: #837fec;
+  height: 1.8rem;
+  margin-left:6.4rem;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 0.1rem #837fec solid;
+}
+.content{
+  width: 8rem;
+  height: 2rem;
+  margin-left: 4.2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.button{
+  width: 12rem;
+  height: 4rem;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+.button-left{
+  width: 4rem;
+  height: 2rem;
+  background-color: #c3c3c3;
+  border: 0.2rem solid #787878;
+  border-radius:0.5rem;
+  text-align: center;
+  line-height: 2rem;
+  float: left;
+  margin-top: 0.8rem;
+  margin-left: 1rem; 
+  font-size: 1.1rem
+}
+.button-right{
+  width: 4rem;
+  height: 2rem;
+  background-color: #837fec;
+  border: 0.2rem solid #4640fa;
+  border-radius:0.5rem;
+  text-align: center;
+  line-height: 2rem;
+  float: right;
+  margin-top: 0.8rem;
+  margin-right: 1.1rem; 
+
+}

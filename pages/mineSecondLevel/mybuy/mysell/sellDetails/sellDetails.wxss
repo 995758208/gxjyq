@@ -1,0 +1,49 @@
+.container{
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+}
+.deta-img{
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.deta-img image{
+  width: 100%;
+}
+.deta-res{
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 5rme;
+  background-color: #fff;
+}
+.first,.second,.third{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 2rem;
+}
+.first1,.second1,.third1{
+  padding-left: 0.5rem;
+  width: 60%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.first2,.second2,.third2{
+  padding-right: 0.5rem;
+  width: 40%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

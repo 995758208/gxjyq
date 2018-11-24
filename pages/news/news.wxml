@@ -1,0 +1,46 @@
+<!--news.wxml-->
+<view class="container">
+<!-- 导航部分 -->
+  <view class='new-nav'>
+    <view class='new-title'>消息</view>
+    <view class='new-smalltitle'>暂无消息</view>
+    <view class='new-add'>
+      <image src='../../images/icon/add.png'></image>
+    </view> 
+  </view>
+  <!-- 官方 -->
+  <view class='offical' wx:for="{{officalCon}}" wx:key="{{index}}">
+    <view class='header-img'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='header-title'>
+      {{item.name}}
+    </view>
+    <view class='header-res'>
+      {{item.con}}
+    </view>
+  </view>
+  <!-- 小标题 -->
+  <view class='small-header'>
+    全部消息
+    <image src='../../images/icon/more.png'></image>
+  </view>
+  <!-- 内容列表 -->
+  <view class='new-contain'>
+    <view class='new-list' wx:for="{{listCon}}" wx:key="{{index}}">
+      <navigator url='msg/msg'>
+        <view class='list-img'>
+          <view class='point'>{{item.num}}</view>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class='list-title'>
+          {{item.name}}
+          <view class='time'>{{item.time}}</view>
+        </view>
+        <view class='list-res'>
+          {{item.con}}
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

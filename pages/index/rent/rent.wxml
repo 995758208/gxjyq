@@ -1,0 +1,12 @@
+<view class='container'>
+  <view class='line' wx:for="{{con}}" wx:key="{{index}}">
+    <view class='Img'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='Name'>{{item.name}}</view>
+    <view class='all'>
+      <view class='see'>浏览量：{{item.see}}</view>
+      <view class='money'>租金：{{item.money}}</view>
+    </view>
+  </view>
+</view>

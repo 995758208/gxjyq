@@ -1,0 +1,37 @@
+<view class='container'>
+  
+  <!-- 买卖服务 -->
+  <view class='buy-service'>
+    <view class='buy-sell'>
+      <view class="buy-search"> 
+      <input class="input" name="search" placeholder="请输入宝贝名" />
+      </view>
+    </view>
+    <view class='buy-school'>
+      <view class='s-position'>
+        <image src='../../images/icon/position.png'></image>
+      </view>
+      <text>学校：{{school}}</text>
+    </view>
+  </view>
+  <!-- 商品介绍 -->
+  
+    <view class="buy-goods" wx:for="{{buyGoods}}" wx:key="{{index}}"  id='{{item.id}}' bindtap='rander' wx:if="{{true}}">
+      <view class='goods-img'>
+        <image src='http://{{item.cover}}' ></image>
+      </view>
+      <view class='goods-center'>
+        <text class='name'>名称：{{item.name}}</text>
+        <text class='description'>产品描述：{{item.desc}}</text>
+        <text class='Honest'>浏览：{{item.viewCount}}</text>
+      </view>
+      <view class='goods-right'>
+        <text class='see'>诚信：{{item.honest}}</text>
+        <text class='new'>几成新：{{item.newnessLevel}}</text>
+        <text class='money'>价格：{{item.price}}</text>
+        <text class='server'>验品服务：{{item.server}}</text>
+      </view>
+    </view>
+  
+  <view class='kong'></view>
+</view>

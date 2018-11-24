@@ -1,0 +1,43 @@
+<view class="container">
+  <view class='head'>实名认证</view>
+  <view class='text'>
+    为提升交易可靠性，请进行实名认证，
+  </view>
+  <view class='text2'>
+    实名认证是由鲸鱼校方合作的第三方个人身份认证的服务，保障个人身份真实性。鲸鱼校圈将逐步推进圈平台实名认证，为用户创造更加安全的交易环境。
+  </view>
+  <form bindsubmit='searchBox'>
+    <view class='school'>
+      <view class='schoolText'>学校</view>
+      <input placeholder='省/市/区/校名' name="schoolName" bindinput ="schoolInput"></input>
+    </view>
+    <view class='school'>
+      <view class='schoolText'>专业</view>
+      <input placeholder='学院(系)/专业' name="major" bindinput='majorInput'></input>
+    </view>
+    <view class='school'>
+      <view class='schoolText'>宿舍号</view>
+      <input placeholder='请输入宿舍号' name="password" bindinput='pswInput'></input>
+    </view>
+    <view class='school'>
+      <view class='schoolText'>姓名</view>
+      <input placeholder='请输入姓名' name="userName" bindinput='userInput'></input>
+    </view>
+    <view class='school'>
+      <view class='schoolText'>学号</view>
+      <input placeholder='请输入学号' name="schoolNum" bindinput='numInput'></input>
+    </view>
+    <view class='school'>
+      <view class='schoolText'>密码</view>
+      <input placeholder='请输入密码' name="password" bindinput='pswInput'></input>
+    </view>
+    <view class='school'>
+      <view class='schoolText'>手机号</view>
+      <input placeholder='请输入密码' name="password" bindinput='pswInput'></input>
+    </view>
+    
+    <view class='btn'>
+      <button bindtap='test'>开始验证</button>
+    </view>
+  </form>
+</view>

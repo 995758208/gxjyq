@@ -1,0 +1,13 @@
+<view class="container">
+  <view class='line' wx:for="{{publish}}" wx:key="{{index}}">
+    <view class="wenzi">
+      {{item.text}}
+    </view>
+    <view class="img">
+      <image src='{{item.img1}}'></image>
+      <image src='{{item.img2}}'></image>
+      <image src='{{item.img3}}'></image>
+    </view>
+    <view class="time">{{item.time}}</view>
+  </view>
+</view>

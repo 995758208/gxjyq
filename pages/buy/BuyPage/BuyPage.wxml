@@ -1,0 +1,54 @@
+<!--pages/buy/BuyPage/BuyPage.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class='container' id='{{id}}'>
+
+  <view class='header'>
+  <!--用户信息-->
+    <view class='header-img'>
+      <image src='{{avatarUrl}}'></image>
+    </view>
+    <view class='header-name'>
+      {{nickName}}
+    </view>
+    <view class='header-con'>
+      <!--产品照片-->
+      <view class='good-img'>
+        <image src='http://{{goodsimg}}'></image>
+      </view>
+      <view class='good-introduction'>
+      {{desc}}
+      </view>
+      <view class='good-price'>
+      ￥{{price}}
+      </view>
+    </view>
+  </view>
+  <!--地址信息-->
+  <text class='title'>地址</text>
+  
+  <view class='address'>
+  
+      <text class='ms'>宿舍号:</text>
+        <input class="nubmer" name="dorm" value='{{form.dorm}}' placeholder="   如13b210" />
+        <text class='ms'>手机：</text>
+        <input class="nubmer" name="phoneNumber" value='{{form.phoneNumber}}' placeholder="   请输入手机号码" />
+        <text class='ms'>交易方式：</text>
+        <radio-group class="radio-group" name="paymentMethod">
+    <label class="radio" >
+        <radio value="0" checked="ture" />面交
+    </label>
+    </radio-group>  
+      
+  </view>
+  <!--支付方式-->
+  <view class='bottom'>
+    <view class='total'>
+      <text>合计：</text>
+      <text>￥{{price}}</text>
+    </view>
+    <button class='btn' formType="submit">确认下单</button>
+    
+  </view>
+
+</view>
+  </form>

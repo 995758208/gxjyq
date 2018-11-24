@@ -1,0 +1,105 @@
+<!--index.wxml-->
+<view class="page">
+  <!-- 滚动图 -->
+  <view class='scroll-img'>
+    <swiper class="banner-img" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular ="{{circulars}}" indicator-color="#FFF" indicator-active-color="#bfefff">
+      <block wx:for="{{backgroundImg}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 分类导航 -->
+  <view class='sort-nav'>
+    <view class='sort-nav-tab' wx:for="{{routers}}" wx:key="{{index}}">
+      <navigator url="{{item.URL}}" bindtap='{{item.function}}'>
+        <view class='tab-bg'>
+          <view class='tab-icon'>
+            <image src=" {{item.icon}}" mode="scaleToFill" />
+          </view>
+          <text class='tab-name'>
+            {{item.name}}
+          </text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  
+  
+  <view class='adv-banner'>
+    <swiper class="adv-img" vertical="true" autoplay="true" interval="4000" circular="true" duration="1500">
+        <block wx:for="{{adv}}" wx:key="index">
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+    </swiper>
+  </view>
+  <!-- 出租专区 -->
+  <!--<view class='lease-template'>
+    <view class='tem-top'>
+      <text class='tem-top-text'>租赁专区</text>
+    </view>
+    <view class='tem-center' wx:for="{{leaseImg}}" wx:key="{{index}}">
+      <view class='tem-img'>
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class='tem-name'>
+        名称：{{item.name}}
+      </view>
+      <view class='tem-price'>
+        价格：{{item.price}}元/天
+      </view>
+      <view class='tem-see'>
+        <image src='../../images/icon/see.png'></image>
+        {{item.num}}
+      </view>
+    </view>
+  </view>-->
+  <!-- 买卖专区 -->
+  <view class='Business-template'>
+    <view class='bus-top'>
+      <text class='bus-top-text'>买卖专区</text>
+    </view>
+    <view class='bus-center' wx:for="{{BusinessImg}}" wx:key="{{index}}" bindtap='buy' id='{{item.id}}'>
+      <view class='bus-img'>
+        <image src="http://{{item.cover}}"></image>
+      </view>
+      <view class='bus-name'>
+        名称：{{item.name}}
+      </view>
+      <view class='bus-price'>
+        价格：{{item.price}}元
+      </view>
+      <!-- <view class='tem-mouth'>
+        口碑：{{item.mouth}}
+      </view>
+      <view class='tem-honest'>
+        诚信度：{{item.honest}}
+      </view> -->
+      <view class='bus-see'>
+        <image src='../../images/icon/see.png'></image>
+        {{item.viewCount}}
+      </view>
+    </view>
+  </view>
+  <!-- 服务专区 -->
+  <view class='lease-template'>
+    <view class='tem-top'>
+      <text class='tem-top-text'>服务专区</text>
+    </view>
+    <view class='tem-center' wx:for="{{serverGoods}}" wx:key="{{index}}">
+      <view class='tem-img'>
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class='tem-name'>
+        名称：{{item.name2}}
+      </view>
+      <view class='tem-see'>
+        <image src='../../images/icon/see.png'></image>
+        {{item.num}}
+      </view>
+    </view>
+  </view>
+</view>

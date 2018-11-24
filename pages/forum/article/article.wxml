@@ -1,0 +1,23 @@
+<!--pages/forum/article/article.wxml-->
+<view class='container'>
+<!--导航-->
+  <view class='for-nav btn-area'>
+    
+      <view bindtap="actioncnt"  class='for-modul'>
+        发布
+      </view> 
+  </view>
+<!--发布内容-->
+  <view class="section">
+  <textarea bindblur="bindTextAreaBlur" auto-focus placeholder="#李荣浩新歌只有4秒#" />
+    <view bindtap="getimage"  class='get-image'>
+        <image src='../../../images/icon/sendes.png'></image>
+    </view> 
+  </view>
+  <!--所在学校-->
+  <view class='position'>
+    <text>{{school}}</text>
+  </view>
+</view>
+<!--发送按钮-->
+<view class='button'><text>发送</text></view>

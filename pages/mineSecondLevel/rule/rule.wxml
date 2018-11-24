@@ -1,0 +1,9 @@
+<view class="container">
+  <!-- 内容 -->
+  <view wx:for="{{rules}}" wx:key="{{index}}">
+    <view class='rules'  bindtap="{{item.function}}">
+      <text>{{item.title}}</text>
+      <image src='../../../images/icon/right.png'></image>
+    </view>
+  </view>
+</view>

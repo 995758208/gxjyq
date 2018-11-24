@@ -1,0 +1,27 @@
+<view class="container">
+  <view class='name'>
+    {{name}}
+  </view>
+  <view wx:for="{{lists}}" wx:key="{{index}}">
+    <view class='right'>
+      <view class='right-text'>
+          {{item.value}}
+      </view>
+      <view class='right-img'>
+        <image src='{{rightImg}}'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='bottom'>
+    <view class='input'>
+      <input type='text' bindinput='inputFunc' value='{{text}}'></input>
+    </view>
+    <view class='add' >
+      <image src='../../../images/icon/send.png'></image>
+    </view>
+    <view class='bq' bindtap='addItemFn'>
+      <image src='../../../images/icon/jys.png'></image>
+    </view>
+  </view>
+</view>

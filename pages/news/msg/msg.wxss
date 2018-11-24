@@ -1,0 +1,69 @@
+.container{
+  padding: 0;
+  margin: 0;
+}
+.name{
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+}
+.right-text{
+  padding: 0.5rem;
+  width: 50%;
+  height: auto;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #0d5590;
+  border-radius: 0.5rem;
+  word-break:break-all;
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  width: 100%;
+}
+.right-img{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.right-img image{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  display: inline-flex;
+  width: 100%;
+  height: 3rem;
+}
+.input{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 2rem;
+}
+.input input{
+  padding-left: 0.5rem;
+  width: 85%;
+  height: 1.5rem;
+  border-bottom: 1px solid #efefef;
+}
+.bq,.add{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 2rem;
+}
+.bq image,.add image{
+  width: 1.5rem;
+  height: 1.5rem;
+}

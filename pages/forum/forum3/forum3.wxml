@@ -1,0 +1,84 @@
+<!--pages/forum/forum3/forum3.wxml-->
+<view class='container'>
+<view class='for-container' wx:for="{{user}}" wx:key="{{index}}" >
+  <view class='for-con-top' >
+      <view class='for-headImg'>
+        <image src='{{item.headingImg}}'></image>
+      </view>
+      <view class='for-text'>
+      <!--用户名称和时间-->
+        <text class='for-text1'>{{item.username}}</text>
+        <text class='for-text2'>{{item.time}}</text>
+      </view>
+      <view class='for-right' bindtap='report'>
+      <image src='../../../images/icon/jubao.png'></image>
+        举报
+      </view>
+  </view>
+    <view class='for-con-center'>
+      <view class='center-title'>{{item.heading}}</view>
+      <view class='center-data'>{{item.new}}</view>
+      <view class='center-img'>
+        <view class='center-imgs' wx:for="{{item.showImg}}" wx:key="{{index}}">
+          <image src='{{item}}'></image>
+        </view>
+      </view>
+    </view>
+    <view class='for-con-bottom'>
+      
+      <!-- 点赞功能 -->
+      <view class='good'>
+        <view class='sendNews'>
+          <image src='../../../images/icon/fx.png'></image>
+          分享
+        </view>
+        <view class='sayNews'>
+          <image src='../../../images/icon/pl.png'></image>
+          评论
+        </view>
+        <view class='loveNews'>
+          <image src='../../../images/icon/ax.png'></image>
+          {{item.newsNum}}
+        </view>
+        <view class='Collection'>
+          <image src='../../../images/icon/shou.png'></image>
+          收藏
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--评论-->
+  <view class='comment-container' wx:for="{{comment}}" wx:key="{{index}}" >
+    <view class='comment-top' >
+      <view class='comment-headImg'>
+        <image src='{{item.headingImg}}' style='width:2rem;height:2rem'></image>
+      </view>
+      <view class='comment-text'>
+      <!--用户名称和时间-->
+        <text class='comment-text1'>{{item.commentname}}</text>
+        <text class='comment-text2'>{{item.time}}</text>
+      </view>
+      <view class='comment-right' bindtap='report'>
+      <image src='../../../images/icon/ax.png'style="margin-right:0.5rem;"></image>
+      <image src='../../../images/icon/jubao.png'></image>
+      </view>
+  </view>
+    <view class='comment-center'>
+      <view class='comment-data' >{{item.new}}</view>
+    </view>
+  </view>
+  <!--输入评论-->
+  <view class='bottom'>
+    <view class='input'>
+      <input type='text' bindinput='inputFunc' value='{{text}}' placeholder='请输入你的评论'></input>
+    </view>
+    <view class='add' >
+      <image src='../../../images/icon/send.png'></image>
+    </view>
+    <view class='bq' bindtap='addItemFn'>
+      <image src='../../../images/icon/jys.png'></image>
+    </view>
+  </view>
+</view>
+
+

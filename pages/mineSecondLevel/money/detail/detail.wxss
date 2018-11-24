@@ -1,0 +1,47 @@
+Page{
+  background-color:rgba(226, 223, 223, 0.514);
+}
+.information{
+  margin-top: 20rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  text-indent: 1rem;
+  color: rgb(110, 110, 110);
+  padding:10rpx 0;
+  line-height: 50rpx;
+}
+.title{
+  font-size: 1rem;
+  color: black;
+}
+.contacts{
+  color: black;
+  line-height: 50rpx;
+  margin-top: -1rpx
+}
+.single{
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.single image{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+.money{
+  flex-direction: row;
+  font-size: 16px;
+  justify-content: space-between;
+  padding:10rpx 20rpx 10rpx 0
+}
+.note{
+  color: #837fec;
+  font-size: 0.7rem;
+  margin-top: 80rpx;
+  line-height: 50rpx;
+  text-align: center
+}

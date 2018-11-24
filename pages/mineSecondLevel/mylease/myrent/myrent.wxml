@@ -1,0 +1,33 @@
+<view class='container'>
+  <view class='lease-nav'>
+    <view class='left'>我出租了</view>
+    <view class='right'>
+      <!-- <navigator url='myrent/myrent'>
+        <view class='right-text'>
+          我出租了
+          <image src='../../../images/icon/right.png'></image>
+        </view>
+      </navigator> -->
+    </view>
+  </view>
+
+  <view class='lease-list' wx:for="{{list}}" wx:key="{{index}}">
+    <view class='tap'>
+      <view class='name'>{{item.name}}</view>
+      <view class='time'>剩余：{{item.lessTime}}天</view>
+    </view>
+    <view class='tap-con'>
+      <view class='con-left'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='con-right'>
+        <view class='con-right2'>
+          ￥{{item.money}}
+        </view>
+        <view class='con-right2'>
+          {{item.time}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

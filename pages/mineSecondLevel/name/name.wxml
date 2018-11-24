@@ -1,0 +1,27 @@
+<view class="container">
+  <view class='Img'>
+    <view class='Imges'>
+      <image src='../../../images/icon/send.png'></image>
+    </view>
+  </view>
+  <view class='nameText'>
+    你尚未实名认证
+  </view>
+  <view class='Text'>
+    实名认证是由鲸鱼校圈合作的第三方个人身份认证系统，通过学生的学籍号，密码，微信号进行识别，保障个人身份真实性。实名认证后，可提升您在二手交易中的信用值哦。本次认证只做鲸鱼校圈本台认证用途。
+  </view>
+  <view class='check'>
+    <checkbox-group bindchange="listenCheckboxChange">
+      <label class="checkbox">
+          <checkbox value="我知道了" checked='{{checked}}'/>我知道了
+      </label>
+    </checkbox-group>
+  </view>
+  <view class='btn'>
+    <!-- <navigator> -->
+      <button bindtap='right'>
+        确认
+      </button>
+    <!-- </navigator> -->
+  </view>
+</view>

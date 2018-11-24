@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='tops'>
+    <text>
+      用温暖慢慢融化你寂寞的雪。
+    </text>
+    <view class='topsss'>
+      <image src='../../../images/leaseImg/2.jpg'></image>
+    </view>
+  </view>
+  <view class='wc'>
+    <view class='a'>请加鲸鱼小助的微信</view>
+    <view class='b'>
+      <image src='../../../images/leaseImg/3.jpg'></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,86 @@
+/* pages/buy/pay/pay.wxss */
+
+<<<<<<< HEAD
+#top {
+  height: 3rem;
+  width: 20.5rem;
+  background: #837fec;
+}
+
+#top image {
+  height: 0.7rem;
+  width: 0.5rem;
+  padding: 1.2rem;
+}
+
+#top text {
+  position: absolute;
+  top: 1rem;
+  right: 8rem;
+  color: #fff;
+  font: normal 0.8rem 黑体;
+}
+
+.logo {
+  width: 9rem;
+  height: 20rem;
+}
+
+.logo image {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  right: 7rem;
+  top: 8rem;
+}
+
+.logo text {
+  font: normal 0.8rem 黑体 bold;
+  width: 15rem;
+  height: 16rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 8rem;
+}
+
+.button image {
+=======
+.logo{
+width: 100%;
+height: 13rem;
+}
+
+.logo image{
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem auto;
+}
+.text{
+  font:  normal 1rem 黑体 bold;
+  width: 6rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+.buttomimg{
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem auto;
+}
+.buttomimg image{
+>>>>>>> 857e427b59d432e05aa628f098c84f1de311fb19
+  width: 2rem;
+  height: 2rem;
+}
+
+.button button {
+  width: 12rem;
+  height: 2rem;
+  border: 0.1rem solid #837fec;
+<<<<<<< HEAD
+  padding-top: 0.2rem;
+}
+=======
+  line-height: 2rem;
+}
+>>>>>>> 857e427b59d432e05aa628f098c84f1de311fb19

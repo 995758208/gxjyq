@@ -1,0 +1,49 @@
+/* pages/buy/payfalse/payfalse.wxss */
+#top{
+  height: 3rem;
+  width: 20rem;
+  background:#837fec;
+}
+#top image{
+  height: 0.7rem;
+  width: 0.5rem;
+  padding: 1.2rem;
+}
+#top text{
+  position: absolute;
+  top: 1rem;
+  right:8rem; 
+  color: #ffffff;
+  font: normal 0.8rem 黑体;
+}
+.logo{
+width: 9rem;
+height: 20rem;
+}
+.logo image{
+  width: 15rem;
+  height: 16rem;
+  position: absolute;
+  right: 4rem;
+}
+.logo text{
+  font:  normal 0.8rem 黑体 bold;
+  width: 15rem;
+  height: 16rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 8rem;
+}
+.button image{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 16rem;
+  right: 10.5rem;
+}
+.button button{
+  width: 12rem;
+  height: 2rem;
+  border: 0.1rem solid #837fec;
+  padding-top: 0.2rem;
+}

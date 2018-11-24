@@ -1,0 +1,224 @@
+.container{
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+}
+.buy-school{
+  width: 50%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 0.7rem;
+  color: #fff;
+  /* 文本不超过一行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.s-position{
+  float: left;
+  width: 10%;
+  height: 3rem;
+  margin-top: 0.1rem;
+}
+.buy-school text{
+  float: left;
+  width: 90%;
+  height: 3rem;
+}
+.buy-school image{
+  width: 1rem;
+  height: 1rem;
+}
+.buy-screen{
+  padding-right: 0.5rem;
+  width: 50%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.buy-service{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  background-color: #837fec;
+}
+.buy-sell{
+  display: inline-flex;
+  width: 50%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 0.6rem;
+}
+.buy,.sell{
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.buy-search{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+}
+
+.buy-search .input{
+  padding-left: 0.5rem;
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+.buy-search icon{
+  display: inline;
+}
+.buy-goods{
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 6rem;
+  background-color: #fff;
+}
+.buy-goods:nth-child(1){
+  margin-top: 0rem;
+}
+.goods-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 6rem;
+}
+.goods-img image{
+  width: 4rem;
+  height: 4rem;
+}
+.goods-center{
+  width: 45%;
+  height: 5rem;
+  
+}
+.name{
+  display: block;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+   /* 文本不超过一行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.description{
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+   /* 文本不超过一行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Honest{
+  display: block;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.7rem;
+   /* 文本不超过一行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.goods-right{
+  margin-left: 5%;
+  width: 25%;
+  height: 6rem;
+}
+.goods-right text{
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.7rem;
+   /* 文本不超过一行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.kong{
+  width: 100%;
+  height: 0.5rem;
+  background-color: #efefef;
+}
+.goods-server{
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  background-color: #fff;
+}
+.goods-server:nth-child(1){
+  margin-top: 0rem;
+}
+.server-left{
+  width: 70%;
+  height: 5rem;
+  line-height: 5rem;
+}
+.server-right{
+  width: 30%;
+  height: 5rem;
+}
+.name2{
+  padding-left: 0.5rem;
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+.description2{
+  padding-left: 0.5rem;
+  display: block;
+  width: 100%;
+  height: 2rem;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  /* 文本不超过一行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Honest2{
+  padding-left: 0.5rem;
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+.see2{
+  padding-right: 0.5rem;
+  float: right;
+  display: block;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  text-align: right;
+}

@@ -1,0 +1,19 @@
+<!--pages/index/server/server.wxml-->
+
+<view class="goods-server" wx:for="{{serverGoods}}" wx:key="{{index}}">
+  <view class='server-left'>
+
+    <text class='name2'>{{item.name}}</text>
+    <text class='time'>发布时间：{{item.serviceTime}}</text>
+    <text class='description2'>服务描述: {{item.desc}}</text>
+    <text class='Honest2'>价格：{{item.price}}元</text>
+  </view>
+  <view class='server-right'>
+    <text class='see'>浏览：{{}}</text>
+    <button class='btn1' id='{{item.id}}' bindtap='news' disabled='{{disableAccept}}' open-type="getPhoneNumber"
+            bindgetphonenumber="getPhoneNumber">抢单
+    </button>
+  </view>
+  <view class='kong'></view>
+
+</view>

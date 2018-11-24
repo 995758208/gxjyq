@@ -1,0 +1,19 @@
+<view class="container">
+  <view class='deta-img'>
+    <image src='{{img}}'></image>
+  </view>
+  <view class='deta-res'>
+    <view class='first'>
+      <view class='first1'>{{name}}</view>
+      <view class='first2'>浏览：{{see}}</view>
+    </view>
+    <view class='second'>
+      <view class='second1'>￥{{money}}</view>
+      <view class='second2'>{{school}}</view>
+    </view>
+    <view class='third'>
+      <view class='third1'></view>
+      <view class='third2'>诚信度：{{bel}}</view>
+    </view>
+  </view>
+</view>
